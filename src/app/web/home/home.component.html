@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6" style="border-right:dashed 2px rgb(20, 73, 218);">
+            <h1 class="text-primary text-center pt-2">JsonPipe</h1>
+            <div class="d-flex justify-content-center">
+            <button class="form-control p-2 mt-5 " (click)="show = !show">Ver valores</button>
+            </div>
+        </div>
+
+        <div class="col-md-6" *ngIf="show">
+            <pre style="margin-left: 3em;">{{value | json}}</pre>
+        </div>   
+    </div>
+</div>
+   
